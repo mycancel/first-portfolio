@@ -4,6 +4,7 @@
     --green: rgb(73 160 120);
     --light: rgb(156 197 161);
     --offwhite: rgb(220 225 222);
+    --heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -22,12 +23,27 @@ header {
     padding: 24px;
 }
 
+/* Added font heading variable */
 h1 {
     color: var(--offwhite);
     font-size: 40px;
+    font-family: var(--heading);
 }
 
-/* Added more space around the nav bar, and colored nav */
+/* Added formatting to h2 */
+h2 {
+    color: var(--teal);
+    font-size: 32px;
+    font-family: var(--heading);
+}
+
+/* Added formatting to h3 */
+h3 {
+    color: var(--teal);
+    font-size: 20px;
+    font-family: var(--heading);
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -39,4 +55,14 @@ nav a {
     color: var(--offwhite);
     padding: 14px 20px;
     text-decoration: none;
+}
+
+/* Added formatted for visited links in navigation */
+nav a:visited {
+    color: var(--offwhite)
+}
+
+/* Sized images */
+img {
+    height: 200px;
 }
