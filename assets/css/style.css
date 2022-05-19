@@ -13,35 +13,30 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p {
-    color: var(--dark);
-    font-size: 16px;
-}
-
 header {
     background-color: var(--teal);
     padding: 24px;
 }
 
-/* Added font heading variable */
 h1 {
     color: var(--offwhite);
     font-size: 40px;
     font-family: var(--heading);
 }
 
-/* Added formatting to h2 */
 h2 {
     color: var(--teal);
     font-size: 32px;
     font-family: var(--heading);
+    text-align: center;
+    margin: 4%;
 }
 
-/* Added formatting to h3 */
 h3 {
     color: var(--teal);
     font-size: 20px;
     font-family: var(--heading);
+    margin: 4%;
 }
 
 nav {
@@ -57,12 +52,40 @@ nav a {
     text-decoration: none;
 }
 
-/* Added formatted for visited links in navigation */
 nav a:visited {
     color: var(--offwhite)
 }
 
-/* Sized images */
 img {
     height: 200px;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.33%;
+    padding: 16px;
+    border-right: 4px solid var(--green);
+    text-align: center;
+}
+
+aside section  {
+    margin: 16px;
+}
+
+aside section p {
+    text-align: left;
+    color: var(--dark);
+    font-size: 16px;
+    margin: 8px;
+}
+
+aside section:nth-child(2) {
+    width: 100%;
+}
+
+aside section a {
+    margin: 12px;
+    color: var(--dark);
+    font-size: 16px;
 }
