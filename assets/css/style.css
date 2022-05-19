@@ -14,9 +14,26 @@ body {
 
 p {
     color: var(--dark);
+    font-size: 16px;
 }
 
 header {
     background-color: var(--teal);
-    color: var(--light);
+    padding: 24px;
+}
+
+h1 {
+    color: var(--offwhite);
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: var(--offwhite);
+    padding: 14px 20px;
+    text-decoration: none;
 }
