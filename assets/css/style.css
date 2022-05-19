@@ -24,12 +24,15 @@ header {
 
 h1 {
     color: var(--offwhite);
-    font-size: 32px;
+    font-size: 40px;
 }
 
+/* Added more space around the nav bar, and colored nav */
 nav {
     display: flex;
     justify-content: flex-end;
+    background-color: var(--green);
+    padding: 4px;
 }
 
 nav a {
