@@ -5,3 +5,12 @@
     --light: rgb(156 197 161);
     --offwhite: rgb(220 225 222);
 }
+
+body{
+    background-color: var(--offwhite);
+}
+
+p {
+    color: var(--dark);
+    font-family:Arial, Helvetica, sans-serif;
+}
