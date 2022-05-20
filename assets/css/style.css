@@ -118,6 +118,12 @@ article div {
     border-radius: 8px;
 }
 
+/* Added movement to images when user hovers over */
+.project:hover {
+    transform: translate(-4px, -4px) scale(1.1,1.1);
+    box-shadow: 8px 8px 8px var(--teal);
+}
+
 #featured {
     width: 600px;
     height: 200px;
