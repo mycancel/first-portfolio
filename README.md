@@ -6,4 +6,4 @@ This porfolio is designed to feature my previous work. At the moment, this work 
 
 ## Visuals
 
-![Portfolio](./assets/images/Mary-Cancellieri-Portfolio.png)
+![Portfolio](./assets/images/Mary-Cancellieri-Portfolio-rename.png)
