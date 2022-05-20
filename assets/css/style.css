@@ -13,12 +13,31 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Added gradient styling */
+/* Header */
 header {
     background: linear-gradient(var(--teal), var(--green));
     padding: 24px;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--green);
+    padding: 4px;
+}
+
+nav a {
+    color: var(--offwhite);
+    font-weight: bold;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--offwhite)
+}
+
+/* Headings */
 h1 {
     color: var(--offwhite);
     font-size: 40px;
@@ -40,29 +59,13 @@ h3 {
     margin: 2%;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--green);
-    padding: 4px;
-}
-
-nav a {
-    color: var(--offwhite);
-    font-weight: bold;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav a:visited {
-    color: var(--offwhite)
-}
-
+/* Main content */
 main {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* About Me and Contact Me */
 aside {
     flex: 1;
     padding: 16px;
@@ -98,6 +101,7 @@ aside section a:visited {
     color: var(--dark);
 }
 
+/* My Work */
 article {
     flex: 3;
     margin-left: 28px;
@@ -119,17 +123,21 @@ article div {
     border-radius: 8px;
 }
 
+/* Images are made slightly bigger and a shadow is added */
 .project:hover {
     transform: translate(-4px, -4px) scale(1.1,1.1);
     box-shadow: 8px 8px 8px var(--teal);
 }
 
+/* The featured image is bigger */
 #featured {
     width: 600px;
     height: 200px;
     border-radius: 8px;
 }
 
+/* When the screen's width reaches 920 or lower, the content shifts vertically
+ Some aesthetic and alignment adjustments are made. */
 @media screen and (max-width: 920px){
     main{
         flex-direction: column;
@@ -150,6 +158,7 @@ article div {
     }
 }
 
+/* When the screen's width is 660px or lower, the featured image shrinks to the size of the rest of the images. */
 @media screen and (max-width: 660px){
     #featured {
         width: 300px;
