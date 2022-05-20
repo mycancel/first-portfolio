@@ -48,6 +48,8 @@ nav {
 
 nav a {
     color: var(--offwhite);
+    /* bolded font */
+    font-weight: bold;
     padding: 14px 20px;
     text-decoration: none;
 }
@@ -64,6 +66,9 @@ main {
 aside {
     flex: 1;
     padding: 16px;
+    /* added more space above and below */
+    margin-top: 16px;
+    margin-bottom: 16px;
     border-right: 4px solid var(--green);
     text-align: center;
 }
