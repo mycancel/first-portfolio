@@ -48,7 +48,6 @@ nav {
 
 nav a {
     color: var(--offwhite);
-    /* bolded font */
     font-weight: bold;
     padding: 14px 20px;
     text-decoration: none;
@@ -66,7 +65,6 @@ main {
 aside {
     flex: 1;
     padding: 16px;
-    /* added more space above and below */
     margin-top: 16px;
     margin-bottom: 16px;
     border-right: 4px solid var(--green);
@@ -102,6 +100,7 @@ aside section a:visited {
 article {
     flex: 3;
     margin-left: 28px;
+    text-align: center;
 }
 
 #my-work {
@@ -123,4 +122,30 @@ article div {
     width: 600px;
     height: 200px;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 920px){
+    main{
+        flex-direction: column;
+    }
+    aside {
+        border-right: 4px solid var(--offwhite);
+        margin-left: 0px;
+    }
+    aside section p {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+    article {
+        transform: translate(-16px, 0);
+    }
+    #my-work {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    #featured {
+        width: 300px;
+    }
 }
