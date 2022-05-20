@@ -13,8 +13,9 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Added gradient styling */
 header {
-    background-color: var(--teal);
+    background: linear-gradient(var(--teal), var(--green));
     padding: 24px;
 }
 
@@ -118,7 +119,6 @@ article div {
     border-radius: 8px;
 }
 
-/* Added movement to images when user hovers over */
 .project:hover {
     transform: translate(-4px, -4px) scale(1.1,1.1);
     box-shadow: 8px 8px 8px var(--teal);
