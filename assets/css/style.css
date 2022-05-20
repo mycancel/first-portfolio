@@ -36,7 +36,6 @@ h3 {
     color: var(--teal);
     font-size: 20px;
     font-family: var(--heading);
-    /* Decreased margin */
     margin: 2%;
 }
 
@@ -85,15 +84,12 @@ aside section p {
     margin: 8px;
 }
 
-/* Removed unnecessary code */
-
 aside section a {
     margin: 16px;
     color: var(--dark);
     font-size: 20px;
 }
 
-/* Added Visited link color */
 aside section a:visited {
     color: var(--dark);
 }
@@ -107,7 +103,6 @@ article {
     font-size: 40px;
 }
 
-/* Images and captions are aligned next to each other */
 article div {
     display: inline-block;
     margin: 0 4px 36px 4px;
@@ -119,7 +114,6 @@ article div {
     border-radius: 8px;
 }
 
-/* the featured photo is bigger */
 #featured {
     width: 600px;
     height: 200px;
