@@ -56,23 +56,26 @@ nav a:visited {
     color: var(--offwhite)
 }
 
-/* Added border radius */
-img {
-    height: 200px;
-    border-radius: 8px;
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 aside {
-    display: flex;
-    flex-wrap: wrap;
-    width: 33.33%;
+    flex: 1;
     padding: 16px;
     border-right: 4px solid var(--green);
     text-align: center;
 }
 
+/* Created specific formatting for aside image */
+aside img {
+    height: 200px;
+    border-radius: 8px;
+}
+
 aside section  {
-    margin: 16px;
+    margin-bottom: 40px;
 }
 
 aside section p {
@@ -86,9 +89,32 @@ aside section:nth-child(2) {
     width: 100%;
 }
 
-/* Increased font-size and margin */
 aside section a {
     margin: 16px;
     color: var(--dark);
     font-size: 20px;
 }
+
+/* Created article spacing */
+article {
+    flex: 3;
+    margin-left: 32px;
+}
+
+#my-work {
+    font-size: 40px;
+}
+
+article div {
+    margin: 0 8px 36px 8px;
+}
+
+.project {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* #featured {
+    flex-grow: 1.5;
+} */
