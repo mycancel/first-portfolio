@@ -21,6 +21,12 @@ var projectArray = [
         alt: 'Password Generator',
         title: 'Password Generator',
     },
+    {
+        href: 'https://github.com/mycancel/weather-dashboard',
+        src: './assets/images/weather-dashboard.png',
+        alt: 'Weather Dashboard',
+        title: 'Weather Dashboard',
+    },
 ]
 
 function init() {
