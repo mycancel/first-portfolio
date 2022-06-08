@@ -24,7 +24,24 @@ var projectArray = [
 ]
 
 function init() {
+    for (var project of projectArray) {
+        var divEl = document.createElement('div');
 
+        var imgEl = document.createElement('img');
+        imgEl.src = project.src;
+        imgEl.alt = project.alt;
+        imgEl.classList = 'project';
+
+        var aEl = document.createElement('a');
+        aEl.href = project.href;
+        aEl.append(imgEl);
+        
+        var h3El = document.createElement('h3');
+        h3El.textContent = project.title;
+
+        divEl.append(aEl, h3El);
+        projectsEl.append(divEl);
+    }
 }
 
 init()
