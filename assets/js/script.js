@@ -19,6 +19,12 @@ var projectArray = [
         alt: 'Weather Dashboard',
         title: 'Weather Dashboard',
     },
+    {
+        href: 'https://github.com/mycancel/trailblazers',
+        src: './assets/images/trailblazers.png',
+        alt: 'Trailblazers NPS API Search',
+        title: 'National Park Search Backend',
+    },
 ]
 
 function init() {
