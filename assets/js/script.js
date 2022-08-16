@@ -2,6 +2,12 @@ var projectsEl = document.querySelector('#project-section');
 
 var projectArray = [
     {
+        href: 'https://github.com/ntraugh/flower-shop',
+        src: './assets/images/flower-shop.png',
+        alt: 'Flower Shop',
+        title: 'Flower Ecommerce Site',
+    },
+    {
         href: 'https://github.com/Hreichgelt/Maps---The-Fingerprint-of-the-Past',
         src: './assets/images/map-search.png',
         alt: 'Map Search',
