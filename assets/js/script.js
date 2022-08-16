@@ -1,5 +1,6 @@
 var projectsEl = document.querySelector('#project-section');
 
+// TODO: Add project description and deployed application link
 var projectArray = [
     {
         href: 'https://github.com/ntraugh/flower-shop',
@@ -31,7 +32,7 @@ var projectArray = [
         alt: 'Trailblazers NPS API Search',
         title: 'National Park Search Backend',
     },
-]
+];
 
 function init() {
     for (var project of projectArray) {
@@ -42,6 +43,7 @@ function init() {
         imgEl.alt = project.alt;
         imgEl.classList = 'project';
 
+        // TODO: Change link to button
         var aEl = document.createElement('a');
         aEl.href = project.href;
         aEl.append(imgEl);
@@ -52,6 +54,9 @@ function init() {
         divEl.append(aEl, h3El);
         projectsEl.append(divEl);
     }
-}
+};
 
-init()
+init();
+
+// TODO: Create Event Listener for buttons in project section
+// TODO: Create Function to populate information about project and buttons to outside links

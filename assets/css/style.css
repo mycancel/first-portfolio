@@ -129,6 +129,8 @@ article div {
     box-shadow: 8px 8px 8px var(--teal);
 }
 
+/* TODO: add modal styling */
+
 /* When the screen's width reaches 920 or lower, the content shifts vertically
  Some aesthetic and alignment adjustments are made. */
 @media screen and (max-width: 920px){
