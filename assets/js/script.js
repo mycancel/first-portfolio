@@ -1,4 +1,5 @@
 const projectsEl = document.querySelector('#project-section');
+const modal = document.querySelector('#modal-content');
 
 const projectArray = [
     {
