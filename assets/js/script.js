@@ -97,7 +97,16 @@ function projectInfo(project) {
     };
 };
 
-// TODO: Create Function to close modal
+function closeModal() {
+    // Hide modal
+    modal.style.display = "none";
+    // Reset modal elements
+    title.innerHTML = null;
+    description.innerHTML = null;
+    ghBtn.href = null;
+    deployBtn.href = null;
+    contrList.innerHTML = null;
+};
 
 function init() {
     for (let project of projectArray) {
@@ -127,3 +136,19 @@ projectsEl.addEventListener('click', (event) => {
         projectInfo(projectObj);
     };
 })
+
+// When the user clicks the span (x), close the modal
+modal.addEventListener('click', (event) => {
+    const element = event.target;
+    if (element.matches('span')) {
+        closeModal();
+    };
+});
+
+// When the user clicks outside of the modal, close it
+// Reference: https://www.w3schools.com/howto/howto_css_modals.asp
+window.onclick = function(event) {
+    if (event.target == modal) {
+      closeModal();
+    };
+};
