@@ -1,5 +1,9 @@
 const projectsEl = document.querySelector('#project-section');
-const modal = document.querySelector('#modal-content');
+const title = document.querySelector('#modal-title');
+const description = document.querySelector('#modal-desc');
+const ghBtn = document.querySelector('#ghBtn');
+const deployBtn = document.querySelector('#deployBtn');
+const contrList = document.querySelector('#contribution');
 
 const projectArray = [
     {
@@ -75,6 +79,21 @@ const projectArray = [
     },
 ];
 
+function projectInfo(project) {
+    // Set title and description of modal
+    title.innerHTML = project.title;
+    description.innerHTML = project.description;
+    // Set hrefs of links
+    ghBtn.href = project.href;
+    deployBtn.href = project.deployed;
+    // Add list items to contribution ul
+    for (let item of project.contribution) {
+        const contrItem = document.createElement('li');
+        contrItem.innerHTML = item;
+        contrList.append(contrItem);
+    };
+};
+
 function init() {
     for (let project of projectArray) {
         const divEl = document.createElement('div');
@@ -97,7 +116,9 @@ init();
 projectsEl.addEventListener('click', (event) => {
     const element = event.target;
     if (element.matches('img')) {
-        console.log('img')
-        // TODO: Create Function to populate information about project and buttons to outside links
+        // Get project information based on img pressed
+        const projectAlt = element.alt;
+        const [projectObj] = projectArray.filter((item) => item.alt === projectAlt);
+        projectInfo(projectObj);
     };
 })

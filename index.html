@@ -30,8 +30,8 @@
             <section>
                 <h2 id="contact-me">Contact Me</h2>
                 
-                <a href="https://github.com/mycancel" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/mary-cance/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/mycancel" target="_blank" rel="noreferrer">Github</a>
+                <a href="https://www.linkedin.com/in/mary-cance/" target="_blank" rel="noreferrer">LinkedIn</a>
             </section>
         </aside>
 
@@ -40,11 +40,22 @@
             <section id="project-section"></section>
         </article>
 
-        <div id="modal">
-            <span class="close">&times;</span>
-            <div id="modal-content"></div>
-        </div>
     </main>
+    <div id="modal">
+        <div id="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <button>
+                <a id="ghBtn" target="_blank" rel="noreferrer">Github Repo</a>
+            </button>
+            <button>
+                <a id="deployBtn" target="_blank" rel="noreferrer">Live Site</a>
+            </button>
+            <p>My contributions included:</p>
+            <ul id="contribution"></ul>
+        </div>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
