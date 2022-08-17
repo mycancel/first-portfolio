@@ -1,4 +1,5 @@
 const projectsEl = document.querySelector('#project-section');
+const modal = document.querySelector('#modal');
 const title = document.querySelector('#modal-title');
 const description = document.querySelector('#modal-desc');
 const ghBtn = document.querySelector('#ghBtn');
@@ -80,6 +81,8 @@ const projectArray = [
 ];
 
 function projectInfo(project) {
+    // Opens modal
+    modal.style.display = "block";
     // Set title and description of modal
     title.innerHTML = project.title;
     description.innerHTML = project.description;
@@ -93,6 +96,8 @@ function projectInfo(project) {
         contrList.append(contrItem);
     };
 };
+
+// TODO: Create Function to close modal
 
 function init() {
     for (let project of projectArray) {
