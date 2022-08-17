@@ -138,22 +138,57 @@ article div {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
+    overflow: auto;
     /* TODO: How to disable scroll of the rest of the page while looking at the modal */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 #modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
+    margin: 5% auto;
+    padding: 30px;
     border: 1px solid var(--light);
     width: 80%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
 }
 
-/* TODO: Styling of the Modal information */
-/* TODO: Create Styling for close button */
+#modal-content p {
+    padding-bottom: 16px;
+    padding-top: 8px;
+    line-height: 1.5em;
+}
+
+#modal-content li {
+    padding-bottom: 8px;
+    line-height: 1.5em;
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
+#modal-content button {
+    padding: 10px 12px;
+    margin: 10px;
+    border: none;
+    background-color: var(--green);
+    border-radius: 4px;
+    align-items: center;
+}
+
+#ghBtn, #deployBtn {
+    color: #fefefe;
+    text-decoration: none;
+}
+/* TODO: Create hover styling for buttons */
+/* TODO: Create Styling for close button, Top right */
+#close {
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--teal);
+    color:#fefefe;
+    padding: 5px;
+}
 
 /* When the screen's width reaches 920 or lower, the content shifts vertically
  Some aesthetic and alignment adjustments are made. */
