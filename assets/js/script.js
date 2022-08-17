@@ -83,21 +83,21 @@ function init() {
         imgEl.src = project.src;
         imgEl.alt = project.alt;
         imgEl.classList = 'project';
-
-        // TODO: Change link to button
-        const aEl = document.createElement('a');
-        aEl.href = project.href;
-        aEl.append(imgEl);
         
         const h3El = document.createElement('h3');
         h3El.textContent = project.title;
 
-        divEl.append(aEl, h3El);
+        divEl.append(imgEl, h3El);
         projectsEl.append(divEl);
     }
 };
 
 init();
 
-// TODO: Create Event Listener for buttons in project section
-// TODO: Create Function to populate information about project and buttons to outside links
+projectsEl.addEventListener('click', (event) => {
+    const element = event.target;
+    if (element.matches('img')) {
+        console.log('img')
+        // TODO: Create Function to populate information about project and buttons to outside links
+    };
+})
