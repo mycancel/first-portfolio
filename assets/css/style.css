@@ -151,6 +151,10 @@ article div {
     background-color: rgba(0,0,0,0.4);
 }
 
+#modal-title {
+    margin: 2%;
+}
+
 #modal-content {
     background-color: #fefefe;
     margin: 5% auto;
@@ -185,6 +189,11 @@ article div {
 #ghBtn, #deployBtn {
     color: #fefefe;
     text-decoration: none;
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: center;
 }
 /* TODO: Create hover styling for buttons */
 /* TODO: Create Styling for close button, Top right */
@@ -226,6 +235,12 @@ article div {
     h3 {
         margin-top: 4px;
         margin-bottom: 2rem;
+    }
+    #modal-title {
+        margin: 4%;
+    }
+    #modal-content {
+        width: 100%;
     }
 }
 
