@@ -1,6 +1,7 @@
 :root {
     --dark: rgb(31 36 33);
     --teal: rgb(33 104 105);
+    --tealfade: rgba(33, 104, 105, 0.5);
     --green: rgb(73 160 120);
     --light: rgb(156 197 161);
     --offwhite: rgb(220 225 222);
@@ -114,7 +115,7 @@ article {
 
 article div {
     display: inline-block;
-    margin: 0 4px 36px 4px;
+    margin: 0 8px 36px 8px;
 }
 
 .project {
@@ -125,8 +126,8 @@ article div {
 
 /* Images are made slightly bigger and a shadow is added */
 .project:hover {
-    transform: translate(-4px, -4px) scale(1.2,1.2);
-    box-shadow: 8px 8px 8px var(--teal);
+    transform: translate(-4px, -4px) scale(1.05,1.05);
+    box-shadow: 4px 4px 4px var(--tealfade);
 }
 
 /* Modal Styling Reference: https://www.w3schools.com/howto/howto_css_modals.asp */
