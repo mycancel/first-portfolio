@@ -8,7 +8,12 @@
     --heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
+    position: relative;
     background-color: var(--offwhite);
     margin: 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -151,8 +156,6 @@ article div {
     padding: 30px;
     border: 1px solid var(--light);
     width: 80%; /* Could be more or less, depending on screen size */
-    display: flex;
-    flex-direction: column;
 }
 
 #modal-content p {
@@ -171,6 +174,7 @@ article div {
 #modal-content button {
     padding: 10px 12px;
     margin: 10px;
+    width: fit-content; 
     border: none;
     background-color: var(--green);
     border-radius: 4px;
@@ -188,7 +192,10 @@ article div {
     font-size: 25px;
     background-color: var(--teal);
     color:#fefefe;
-    padding: 5px;
+    padding: 8px 12px;
+    margin: 95%;
+    width: fit-content;
+    border-radius: 16px;
 }
 
 /* When the screen's width reaches 920 or lower, the content shifts vertically
@@ -212,3 +219,11 @@ article div {
         font-size: 32px;
     }
 }
+
+/* When the screen's width reaches 920 or lower, the content shifts vertically
+ Some aesthetic and alignment adjustments are made. */
+ @media screen and (max-width: 576px){
+    #close {
+        margin: 90%;
+    }
+ }
