@@ -201,12 +201,10 @@ article div {
 /* When the screen's width reaches 920 or lower, the content shifts vertically
  Some aesthetic and alignment adjustments are made. */
 @media screen and (max-width: 920px){
-    main{
-        flex-direction: column;
-    }
     aside {
         border-right: 4px solid var(--offwhite);
         margin-left: 0px;
+        margin-bottom: 0;
     }
     aside section p {
         margin-left: 36px;
@@ -214,15 +212,27 @@ article div {
     }
     article {
         transform: translate(-16px, 0);
+        margin: auto;
+        padding: 16px;
     }
     #my-work {
         font-size: 32px;
+    }
+    article div {
+        margin: 0 0 0 0;
+    }
+    .project {
+        transform: scale(0.9, 0.9);
+    }
+    h3 {
+        margin-top: 4px;
+        margin-bottom: 2rem;
     }
 }
 
 /* When the screen's width reaches 920 or lower, the content shifts vertically
  Some aesthetic and alignment adjustments are made. */
- @media screen and (max-width: 576px){
+ @media screen and (max-width: 576px) {
     #close {
         margin: 90%;
     }

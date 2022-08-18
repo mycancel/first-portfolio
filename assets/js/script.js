@@ -102,9 +102,9 @@ function closeModal() {
     modal.style.display = "none";
     // Reset modal elements
     title.innerHTML = null;
-    description.innerHTML = null;
     ghBtn.href = null;
     deployBtn.href = null;
+    description.innerHTML = null;
     contrList.innerHTML = null;
 };
 
