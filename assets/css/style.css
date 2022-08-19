@@ -208,8 +208,12 @@ article div {
     border-radius: 16px;
 }
 
+/* Referenced Brad on stackOverflow: https://stackoverflow.com/questions/9538868/prevent-body-from-scrolling-when-a-modal-is-opened  */
 .noscroll {
     position: fixed;
+    /* Prevents underlying page from jumping left/right */
+    overflow-x: hidden;
+    overflow-y: scroll !important;
 }
 
 /* When the screen's width reaches 920 or lower, the content shifts vertically
