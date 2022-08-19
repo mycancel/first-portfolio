@@ -5,6 +5,7 @@ const description = document.querySelector('#modal-desc');
 const ghBtn = document.querySelector('#ghBtn');
 const deployBtn = document.querySelector('#deployBtn');
 const contrList = document.querySelector('#contribution');
+const bodyEl = document.querySelector('body');
 
 const projectArray = [
     {
@@ -30,7 +31,7 @@ const projectArray = [
         alt: 'Map Search',
         title: 'Map Search Using APIs',
         deployed: 'https://hreichgelt.github.io/Maps---The-Fingerprint-of-the-Past/',
-        description: "This project— created in collaboration with GitHub users hreichgelt and ntraugh— searches for current and historical maps of a queried location using the Leaflet API and the Library of Congress API. Our team also used OpenWeather's Geocoding API to supplement LeafletJS because the current map requires longitude and latitude to display.",
+        description: 'This project— created in collaboration with GitHub users hreichgelt and ntraugh— searches for current and historical maps of a queried location using the Leaflet API and the Library of Congress API. Our team also used OpenWeather\'s Geocoding API to supplement LeafletJS because the current map requires longitude and latitude to display.',
         contribution: [
             'Populated historical map search using the Library of Congress API',
             'Supported Leaflet map with geolocation function returning latitude and longitude',
@@ -73,16 +74,18 @@ const projectArray = [
         deployed: 'https://intense-fjord-45584.herokuapp.com/',
         description: 'Trailblazers— created in collaboration with GitHub users justinstone2001, grilledcheeseplease, hreichgelt, and ntraugh— is a website to search for national parks according to state and activity using the National Park Service API. If they are logged in, users have the ability to favorite parks in order to see them on their user dashboards. For this site our team used the following dependencies: Axios, Bcrypt, Dotenv, Express, Express-Handlebars, Express-Session, Sequelize, and MySQL2.',
         contribution: [
-            "Built Third-Party API requests with Axios for park information",
-            "Developed system to favorite parks and add to user information in database",
-            "Created dashboard to display favorite parks of logged in user"
+            'Built Third-Party API requests with Axios for park information',
+            'Developed system to favorite parks and add to user information in database',
+            'Created dashboard to display favorite parks of logged in user'
         ]
     },
 ];
 
 function projectInfo(project) {
     // Opens modal
-    modal.style.display = "block";
+    modal.style.display = 'block';
+    // Disable scroll for body behind the modal
+    bodyEl.classList.add('noscroll');
     // Set title and description of modal
     title.innerHTML = project.title;
     description.innerHTML = project.description;
@@ -99,7 +102,9 @@ function projectInfo(project) {
 
 function closeModal() {
     // Hide modal
-    modal.style.display = "none";
+    modal.style.display = 'none';
+    // Enable scroll of body
+    bodyEl.classList.remove('noscroll');
     // Reset modal elements
     title.innerHTML = null;
     ghBtn.href = null;

@@ -149,6 +149,7 @@ article div {
     /* TODO: How to disable scroll of the rest of the page while looking at the modal */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    overflow-x: hidden;
 }
 
 #modal-title {
@@ -196,7 +197,6 @@ article div {
     justify-content: center;
 }
 /* TODO: Create hover styling for buttons */
-/* TODO: Create Styling for close button, Top right */
 #close {
     text-align: center;
     font-size: 25px;
@@ -208,6 +208,10 @@ article div {
     border-radius: 16px;
 }
 
+.noscroll {
+    position: fixed;
+}
+
 /* When the screen's width reaches 920 or lower, the content shifts vertically
  Some aesthetic and alignment adjustments are made. */
 @media screen and (max-width: 920px){
@@ -217,8 +221,9 @@ article div {
         margin-bottom: 0;
     }
     aside section p {
-        margin-left: 36px;
-        margin-right: 36px;
+        /* margin-left: 32px;
+        margin-right: 32px; */
+        font-size: larger;
     }
     article {
         margin: 0 auto;
